@@ -24,6 +24,7 @@ public class _06_houseRobber2{
 
         return Math.max(rob1(arr1), rob1(arr2));
     }
+    
     public static int rob1(int arr[]){
         int n = arr.length;
         if(n==1){

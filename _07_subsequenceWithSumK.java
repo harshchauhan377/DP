@@ -13,7 +13,8 @@ public class _07_subsequenceWithSumK{
 
 
     }
-
+    
+    //recusion
     public static boolean rec(int arr[] , int k , int index){
         if(k==0){
             return true ;
@@ -38,6 +39,7 @@ public class _07_subsequenceWithSumK{
         return nonPick;
     }
 
+    //Memeozation
     // 0 -> null ; 1 -> true  ; 2 -> false  
     public static boolean dpM(int arr[] , int k , int index , int dp[][]){
         if(k==0){
@@ -71,7 +73,8 @@ public class _07_subsequenceWithSumK{
 
         return nonPick;
     }
-
+    
+    //tabulation bottom up approch 
     public static boolean dpT(int arr[] , int k , int n){
         int dp[][] = new int[n][k+1];
 
