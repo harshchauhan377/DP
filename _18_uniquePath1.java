@@ -11,7 +11,7 @@ public class _18_uniquePath1{
         }
        }
 
-       System.out.println("dpM : "+dpM(m,n,dp));
+       System.out.println("dpM : "+dpM(m-1,n-1,dp));
 
        System.out.println("dpT : "+dpT(m,n));
     }
@@ -31,13 +31,13 @@ public class _18_uniquePath1{
     
     //dpM memeoization
     public static int dpM(int m , int n , int dp[][]){
-        if(m==1 && n== 1){
-            dp[m][n] = 1;
+        if(m==0 && n==0){
+            // dp[m][n] = 1;
             return 1 ;
         }
 
-        if(m==0 || n==0){
-            dp[m][n] = 0 ;
+        if(m<0 || n<0){
+            // dp[m][n] = 0 ;
             return 0 ;
         }
 
